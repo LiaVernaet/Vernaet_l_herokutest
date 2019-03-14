@@ -2,9 +2,14 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' /> <!--must use forward slash-->
+    <link rel="stylesheet" href="/stylesheets/master.css"
   </head>
   <body>
+    <h1>Anything under me is being rendered dynamicALLY FROM THE ROUTE</h1>
+    <!--triple handlebars is a shorthand for a router-view-->
     {{{body}}}
+    {{!-- <router-view></router-view> --}}
+    <h3>I live under the router view</h3>
   </body>
 </html>
